@@ -10,7 +10,7 @@ Authoritative with SPEC.md. Re-read both at each checkpoint.
 | 2 | Scaffold the package: `core/`, `server.py`, `snapshots/`, `pyproject.toml` with the `leap-pangeo-mcp` console script | `pip install -e .` works and the server starts with zero tools | Done (2026-10-29) |
 | 3 | Build the eight Phase 1 tools with the mcp-builder skill (Python/FastMCP) | Each tool has a docstring and a unit test in `core/` | Done (2026-10-29) |
 | 4 | Test outside Jupyter: MCP Inspector, then `claude mcp add leap -- leap-pangeo-mcp` | Acceptance criteria 1-2 met | Done (2026-10-30) |
-| 5 | Test on own hub server: `pip install -e`, add to `~/.jupyter/mcp_settings.json`, try Claude, Codex, Gemini | Acceptance criterion 3 met | In progress |
+| 5 | Test on own hub server: `pip install -e`, add to `~/.jupyter/mcp_settings.json`, try Claude, Codex, Gemini | Acceptance criterion 3 met | Done for Claude (2026-10-30); Codex and Gemini deferred to step 8 |
 | 6 | Run evals with step 1 questions; fix docstrings first | Acceptance criterion 4 met | Not started |
 | 7 | Add to `pangeo-jupyter-ai` image: pinned install, `jupyter_server_config.d` JSON, CLI system configs, `/etc/claude-code/CLAUDE.md`; extend smoke test | Acceptance criterion 5 met | Not started |
 | 8 | Pilot with 2-3 researchers for two weeks, then file the 2i2c Image Change Request | Acceptance criterion 6 met | Not started |
@@ -20,7 +20,7 @@ Phase 2 starts only after step 8. It is not part of this plan.
 ## Open questions
 
 - Codex managed config file name under `/etc/codex/` for the version the build resolves.
-- Whether each ACP agent actually connects to stdio servers passed in `session/new` (check in step 5).
+- Whether each ACP agent actually connects to stdio servers passed in `session/new`. Claude: yes, it connects to the stdio server via ACP (step 5, on the hub, 2026-10-30). Codex and Gemini: unverified; check in the step 8 pilot (see Deviations).
 
 ## Parking lot
 
@@ -44,3 +44,5 @@ Material changes from SPEC.md or this plan, with reason, impact and alternatives
 - 2026-10-30, step 3, dask and h5py as runtime dependencies: `pyproject.toml` declares `dask` and `h5py` beyond the seven runtime dependencies in the step 3 brief. Reason: `describe_store` opens stores with `chunks={}`, which needs dask, and h5netcdf 1.8 no longer installs h5py; both are needed for local testing in step 4 and already ship in the Pangeo image. Impact: `pip install` outside the image also installs dask and h5py; the image already has them. Alternative: keep them test-only and let `describe_store` fail outside the image.
 - 2026-10-30, step 3, `core/common.py`: a helper module beside the five core modules in the step 3 brief. Reason: catalog, docs and storage share the cached fetch with snapshot fallback, cursors, the page budget and the error type; one module avoids three copies. Impact: none on the tools; it has no MCP imports and its own tests (`tests/test_common.py`). Alternative: repeat the helpers in each module.
 - 2026-10-30, step 3, `list_storage` refuses `s3://`: it accepts only `gs://` and OSN `https://` folders, while `describe_store` also accepts `s3://` URLs. Reason: the step 3 brief lists only GCS and OSN for `list_storage`. Impact: folders in other S3 buckets cannot be listed, though single stores there can still be described. Alternative: accept `s3://` (anonymous) in `list_storage` too.
+- 2026-10-30, step 5, Codex and Gemini: acceptance criterion 3 is verified for Claude only; Codex and Gemini verification moves to the step 8 pilot, with researchers who have those subscriptions. Reason: no Codex or Gemini subscription to test with. Impact: if either agent does not connect, it is found after the image is built. Alternative: test Gemini CLI on its free tier with a personal Google account.
+- 2026-10-30, steps 6 and 7 order: step 7 starts before step 6; step 6 (evals) must finish before step 8's 2i2c Image Change Request instead. Reason: the step 1 questions are not ready, and step 6 depends on them. Impact: the image may need a second tag after evals; no researcher outside the step 8 pilot sees it before the ticket. Alternative: keep step 6 before step 7 and delay the image until the step 1 questions are ready.
