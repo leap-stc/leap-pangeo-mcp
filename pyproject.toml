@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "leap-pangeo-mcp"
+version = "0.1.0"
+description = "MCP server that gives AI agents on LEAP's JupyterHub knowledge of LEAP Pangeo's data and compute resources."
+requires-python = ">=3.10"
+dependencies = [
+    # <2 matches the image: jupyter-ai 3.2 -> jupyter-server-mcp 0.3 -> fastmcp 3.x pins mcp<2.0,>=1.24.
+    "mcp>=1.24,<2",
+    # All of these ship in the Pangeo base image.
+    "xarray",
+    "zarr",
+    "fsspec",
+    "gcsfs",
+    "s3fs",
+    "h5netcdf",
+    "httpx",
+    # describe_store opens lazily with chunks={}, which needs dask.
+    "dask",
+    # h5netcdf 1.8 no longer installs its h5py backend.
+    "h5py",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+leap-pangeo-mcp = "leap_pangeo_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["leap_pangeo_mcp"]

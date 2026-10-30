@@ -1,0 +1,2161 @@
+[
+  {
+    "title": "CorrDiff NYC Downscaling Datasets",
+    "description": "A collection of atmospheric datasets and model outputs prepared for CorrDiff-based climate downscaling experiments over the New York City region. The collection includes ERA5 inputs interpolated to the HRRR grid, HRRR reference datasets, CorrDiff model inputs, generated outputs, and target datasets. Data are stored as NetCDF files on the Open Storage Network.\n",
+    "maintainers": [
+      {
+        "name": "Sarika de Bruyn",
+        "github": "sarika-debruyn"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "LEAP",
+          "description": "Dataset collection hosted by LEAP on the Open Storage Network.\n",
+          "roles": ["host"],
+          "url": null
+        }
+      ],
+      "license": "Apache Version 2.0",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": [
+      "atmosphere",
+      "climate",
+      "corrdiff",
+      "downscaling",
+      "machine-learning",
+      "netcdf",
+      "new-york-city",
+      "open-storage-network"
+    ],
+    "links": null,
+    "stores": [
+      {
+        "id": "era5-hrrr-interp-128-2020",
+        "name": "ERA5 atmospheric fields interpolated to the 128-by-128 HRRR grid for 2020.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/ERA5_hrrr_interp_128_2020.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "era5-hrrr-interp-128-2021",
+        "name": "ERA5 atmospheric fields interpolated to the 128-by-128 HRRR grid for 2021.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/ERA5_hrrr_interp_128_2021.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "era5-hrrr-interp-128-2022",
+        "name": "ERA5 atmospheric fields interpolated to the 128-by-128 HRRR grid for 2022.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/ERA5_hrrr_interp_128_2022.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "era5-hrrr-interp-128-2023",
+        "name": "ERA5 atmospheric fields interpolated to the 128-by-128 HRRR grid for 2023.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/ERA5_hrrr_interp_128_2023.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "era5-hrrr-interp-128-2024",
+        "name": "ERA5 atmospheric fields interpolated to the 128-by-128 HRRR grid for 2024.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/ERA5_hrrr_interp_128_2024.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "era5-hrrr-interp-128-2025",
+        "name": "ERA5 atmospheric fields interpolated to the 128-by-128 HRRR grid for 2025.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/ERA5_hrrr_interp_128_2025.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "hrrr-nyc-128-2020-2025",
+        "name": "HRRR atmospheric reference data for the New York City region covering 2020\u20132025.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/hrrr_NYC_128_2020_2025.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "hrrr-nyc-128-2021",
+        "name": "HRRR atmospheric reference data for the New York City region for 2021.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/hrrr_NYC_128_2021.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "hrrr-nyc-128-2022",
+        "name": "HRRR atmospheric reference data for the New York City region for 2022.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/hrrr_NYC_128_2022.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "hrrr-nyc-128-2023",
+        "name": "HRRR atmospheric reference data for the New York City region for 2023.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/hrrr_NYC_128_2023.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "hrrr-nyc-128-2024",
+        "name": "HRRR atmospheric reference data for the New York City region for 2024.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/hrrr_NYC_128_2024.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "hrrr-nyc-128-2025",
+        "name": "HRRR atmospheric reference data for the New York City region for 2025.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/hrrr_NYC_128_2025.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "input-1945",
+        "name": "CorrDiff model input dataset for 1945.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/input_1945.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "input-1955",
+        "name": "CorrDiff model input dataset for 1955.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/input_1955.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "input-1965",
+        "name": "CorrDiff model input dataset for 1965.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/input_1965.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "input-1975",
+        "name": "CorrDiff model input dataset for 1975.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/input_1975.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "input-1985",
+        "name": "CorrDiff model input dataset for 1985.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/input_1985.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "input-1995",
+        "name": "CorrDiff model input dataset for 1995.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/input_1995.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "input-2005",
+        "name": "CorrDiff model input dataset for 2005.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/input_2005.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "input-2020",
+        "name": "CorrDiff model input dataset for 2020.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/input_2020.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "input-2021",
+        "name": "CorrDiff model input dataset for 2021.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/input_2021.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "input-2025",
+        "name": "CorrDiff model input dataset for 2025.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/input_2025.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "output-1945",
+        "name": "CorrDiff-generated atmospheric output for 1945.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/output_1945.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "output-1955",
+        "name": "CorrDiff-generated atmospheric output for 1955.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/output_1955.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "output-1965",
+        "name": "CorrDiff-generated atmospheric output for 1965.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/output_1965.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "output-1975",
+        "name": "CorrDiff-generated atmospheric output for 1975.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/output_1975.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "output-1985",
+        "name": "CorrDiff-generated atmospheric output for 1985.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/output_1985.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "output-1995",
+        "name": "CorrDiff-generated atmospheric output for 1995.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/output_1995.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "output-2005",
+        "name": "CorrDiff-generated atmospheric output for 2005.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/output_2005.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "output-2020",
+        "name": "CorrDiff-generated atmospheric output for 2020.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/output_2020.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "output-2021",
+        "name": "CorrDiff-generated atmospheric output for 2021.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/output_2021.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "output-2025",
+        "name": "CorrDiff-generated atmospheric output for 2025.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/output_2025.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "target-1945",
+        "name": "CorrDiff reference target dataset for 1945.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/target_1945.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "target-1955",
+        "name": "CorrDiff reference target dataset for 1955.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/target_1955.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "target-1965",
+        "name": "CorrDiff reference target dataset for 1965.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/target_1965.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "target-1975",
+        "name": "CorrDiff reference target dataset for 1975.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/target_1975.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "target-1985",
+        "name": "CorrDiff reference target dataset for 1985.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/target_1985.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "target-1995",
+        "name": "CorrDiff reference target dataset for 1995.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/target_1995.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "target-2005",
+        "name": "CorrDiff reference target dataset for 2005.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/target_2005.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "target-2020",
+        "name": "CorrDiff reference target dataset for 2020.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/target_2020.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "target-2021",
+        "name": "CorrDiff reference target dataset for 2021.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/target_2021.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "target-2025",
+        "name": "CorrDiff reference target dataset for 2025.",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/hackathon-2026/corrdiff/target_2025.nc",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/leap-stc/corrdiff_feedstock/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "OSTIA Reprocessed",
+    "description": "GHRSST Level 4 OSTIA Global Historical Reprocessed Foundation Sea Surface Temperature Analysis produced by the UK Meteorological Office.\n",
+    "maintainers": [
+      {
+        "name": "Raphael Hagen",
+        "github": "norlandrhagen"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "NASA PODAAC",
+          "description": "NASA Physical Oceanography Distributed Active Archive Center",
+          "roles": ["producer", "distributor"],
+          "url": null
+        }
+      ],
+      "license": "https://doi.org/10.48670/moi-00168",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": [
+      "global",
+      "zarr",
+      "GHRSST",
+      "L4",
+      "Level 4",
+      "SST",
+      "REP",
+      "reprocessed",
+      "sea surface temperature",
+      "NASA",
+      "UK Met Office"
+    ],
+    "links": null,
+    "stores": [
+      {
+        "id": "OSTIA-REP",
+        "name": "OSTIA-UKMO-L4-GLOB-REP-v2.0",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-pipeline/OSTIA/OSTIA.zarr",
+        "rechunking": null,
+        "public": true,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/leap-stc/OSTIA_REP/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "LDEO-pCO2 HPD Back in Time",
+    "description": "The ocean reduces human impact on the climate by absorbing and sequestering CO2 . From 1950s to the 1980s, observations of pCO2 and related ocean carbon variables were sparse and uncertain. Thus, global ocean biogeochemical models (GOBMs) have been the basis for quantifying the ocean carbon sink. The LDEO-Hybrid Physics Data product (LDEO-HPD) interpolates sparse surface ocean pCO2 data to global coverage by using GOBMs as priors, and applying machine learning to estimate full-coverage corrections.\n",
+    "maintainers": [
+      {
+        "name": "Anderson Banihirwe",
+        "github": "andersy005"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "LDEO",
+          "description": "Lamont Doherty Earth Observatory at Columbia",
+          "roles": ["producer", "licensor"],
+          "url": null
+        },
+        {
+          "name": "LEAP",
+          "description": "STC: Center for Learning the Earth with Artificial Intelligence and Physics",
+          "roles": ["producer", "licensor"],
+          "url": null
+        }
+      ],
+      "license": "CC BY",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": ["ocean", "carbon", "zarr", "machine learning"],
+    "links": [
+      {
+        "label": "Lamont-Doherty Earth Observatory Hybrid Physics Data pCO2 Product",
+        "url": "https://oceancarbon.ldeo.columbia.edu/content/ldeo-hpd"
+      },
+      {
+        "label": "The ocean carbon sink data story",
+        "url": "https://stories.leap.columbia.edu/ocean-sink"
+      }
+    ],
+    "stores": [
+      {
+        "id": "GCB-2023_dataprod_LDEO-HPD_1959-2022-updated-flipped-lon",
+        "name": "flux",
+        "url": "s3://carbonplan-data-viewer/demo/leap-data-stories/GCB-2023_dataprod_LDEO-HPD_1959-2022-updated-flipped-lon.zarr/",
+        "rechunking": null,
+        "public": true,
+        "geospatial": true,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "annual-sfco2",
+        "name": "Annual fgco2",
+        "url": "s3://carbonplan-data-viewer/demo/leap-data-stories/annual-sfco2.zarr/",
+        "rechunking": null,
+        "public": true,
+        "geospatial": true,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/carbonplan/ocean-carbon-sink-data-feedstock/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "Australian Gridded Climate Data (AGCD)",
+    "description": "The Australian Gridded Climate Data dataset is a 5KM gridded daily product provided by the Australian Bureau of Meteorology. \nVersion 1 contains precipitation, vapour pressure and minimum and maximum temperature. Australian Bureau of Meteorology (2020), \nAustralian Gridded Climate Data (AGCD); v1.0.0 Snapshot (1900-01-01 to 2020-05-31). Downloaded from NCI on 09-21-2021.\n",
+    "maintainers": [
+      {
+        "name": "Raphael Hagen",
+        "github": "norlandrhagen"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "Australian Bureau of Meteorology",
+          "description": "The Australian Bureau of Meteorology is a government agency providing weather and climate data. (http://www.bom.gov.au/)",
+          "roles": ["producer", "licensor"],
+          "url": "https://dapds00.nci.org.au/thredds/catalogs/zv2/catalog.html"
+        }
+      ],
+      "license": "CC-BY-NC-4.0",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": [
+      "zarr",
+      "pangeo-forge",
+      "open-storage-network",
+      "osn",
+      "meteorology",
+      "precipitation"
+    ],
+    "links": null,
+    "stores": [
+      {
+        "id": "AGCD",
+        "name": "AGCD",
+        "url": "https://ncsa.osn.xsede.org/Pangeo/pangeo-forge/pangeo-forge/AGDC-feedstock/AGCD.zarr",
+        "rechunking": null,
+        "public": true,
+        "geospatial": true,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/pangeo-forge/AGDC-feedstock/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "ARCO ERA5",
+    "description": "Analysis-Ready, Cloud Optimized ERA5 data ingested by Google Research\n",
+    "maintainers": [
+      {
+        "name": "Julius Busecke",
+        "github": "jbusecke"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "Google Research",
+          "description": "Hersbach, H., Bell, B., Berrisford, P., Hirahara, S., Hor\u00e1nyi, A., Mu\u00f1oz\u2010Sabater, J., Nicolas, J., Peubey, C., Radu, R., Schepers, D., Simmons, A., Soci, C., Abdalla, S., Abellan, X., Balsamo, G., Bechtold, P., Biavati, G., Bidlot, J., Bonavita, M., De Chiara, G., Dahlgren, P., Dee, D., Diamantakis, M., Dragani, R., Flemming, J., Forbes, R., Fuentes, M., Geer, A., Haimberger, L., Healy, S., Hogan, R.J., H\u00f3lm, E., Janiskov\u00e1, M., Keeley, S., Laloyaux, P., Lopez, P., Lupu, C., Radnoti, G., de Rosnay, P., Rozum, I., Vamborg, F., Villaume, S., Th\u00e9paut, J-N. (2017): Complete ERA5: Fifth generation of ECMWF atmospheric reanalyses of the global climate. Copernicus Climate Change Service (C3S) Data Store (CDS).\nHersbach et al, (2017) was downloaded from the Copernicus Climate Change Service (C3S) Climate Data Store. We thank C3S for allowing us to redistribute the data.\nThe results contain modified Copernicus Climate Change Service information 2022. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.\n",
+          "roles": ["producer", "licensor"],
+          "url": null
+        }
+      ],
+      "license": "Apache Version 2.0",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": ["atmosphere", "reanalysis", "zarr"],
+    "links": null,
+    "stores": [
+      {
+        "id": "0_25_deg_pressure_surface_levels",
+        "name": "0.25\u00b0 ERA5 Surface Level Pressure",
+        "url": "gs://gcp-public-data-arco-era5/ar/full_37-1h-0p25deg-chunk-1.zarr-v3",
+        "rechunking": null,
+        "public": true,
+        "geospatial": true,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "0_25_deg_model_levels",
+        "name": "0.25\u00b0 ERA5 Model Level Pressure",
+        "url": "gs://gcp-public-data-arco-era5/ar/model-level-1h-0p25deg.zarr-v1",
+        "rechunking": null,
+        "public": true,
+        "geospatial": true,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/leap-stc/arco-era5_feedstock/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "AWS NOAA Optimum Interpolated SST",
+    "description": "Analysis-ready datasets derived from AWS NOAA OISST NetCDF",
+    "maintainers": [
+      {
+        "name": "Ryan Avery",
+        "github": "rbavery"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "AWS NOAA Oceanic CDR",
+          "description": "Registry of Open Data on AWS National Oceanographic & Atmospheric Administration National Centers for Environmental Information",
+          "roles": ["producer", "licensor"],
+          "url": "s3://noaa-cdr-sea-surface-temp-optimum-interpolation-pds"
+        }
+      ],
+      "license": "Open Data",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": [
+      "zarr",
+      "pangeo-forge",
+      "open-storage-network",
+      "osn",
+      "noaa",
+      "sst",
+      "oisst"
+    ],
+    "links": null,
+    "stores": [
+      {
+        "id": "noaa-oisst",
+        "name": "noaa-oisst",
+        "url": "https://ncsa.osn.xsede.org/Pangeo/pangeo-forge/noaa_oisst/v2.1-avhrr.zarr",
+        "rechunking": null,
+        "public": true,
+        "geospatial": true,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/pangeo-forge/aws-noaa-oisst-feedstock/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "cesm-atm-025deg",
+    "description": "Daily atmospheric data from coupled NCAR CESM run hybrid_v5_rel04_BC5_ne120_t12_pop62",
+    "maintainers": [
+      {
+        "name": "Paige Martin",
+        "github": "paigem"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "National Center for Atmospheric Research",
+          "description": "Daily atmospheric data from coupled NCAR CESM run hybrid_v5_rel04_BC5_ne120_t12_pop62",
+          "roles": ["producer", "licensor", "processor"],
+          "url": "https://www.earthsystemgrid.org/dataset/ucar.cgd.asd.cs.hybrid_v5_rel04_BC5_ne120_t12_pop62.atm-regrid.proc.daily_ave.html"
+        }
+      ],
+      "license": "CC-BY-4.0",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": ["zarr", "pangeo-forge", "open-storage-network", "osn"],
+    "links": null,
+    "stores": [
+      {
+        "id": "cesm-atm-025deg",
+        "name": "cesm-atm-025deg",
+        "url": "https://ncsa.osn.xsede.org/Pangeo/pangeo-forge/cesm-atm-025deg-feedstock/cesm-atm-025deg.zarr",
+        "rechunking": null,
+        "public": true,
+        "geospatial": true,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/pangeo-forge/cesm-atm-025deg-feedstock/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "NOAA-GFDL CM2-O Coupled Climate Model Simulations",
+    "description": "",
+    "maintainers": [
+      {
+        "name": "Julius Busecke",
+        "github": "jbusecke"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "NOAA-GFDL",
+          "description": "NOAA-GFDL",
+          "roles": ["producer", "licensor"],
+          "url": "https://mom-ocean.github.io/assets/pdfs/CM2_O_suite_1990_tutorial_and_analysis.pdf"
+        }
+      ],
+      "license": "Unknown",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": ["my-custom-tag", "zarr"],
+    "links": null,
+    "stores": [
+      {
+        "id": "CM26_control_surface",
+        "name": "CM2.6 Control Run",
+        "url": "gs://cmip6/GFDL_CM2_6/control/surface",
+        "rechunking": null,
+        "public": true,
+        "geospatial": true,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "CM26_control_atm",
+        "name": "CM2.6 Control Run Atmosphere",
+        "url": "gs://cmip6/GFDL_CM2_6/control/atmos_daily.zarr",
+        "rechunking": null,
+        "public": true,
+        "geospatial": true,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/leap-stc/cm2o_feedstock/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "CMIP6",
+    "description": "CMIP6 datasets converted to zarr stores from ESGF files",
+    "maintainers": [
+      {
+        "name": "Julius Busecke",
+        "github": "jbusecke"
+      },
+      {
+        "name": "Charles Stern",
+        "github": "cisaacstern"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "ESGF",
+          "description": "Earth System Grid Federation",
+          "roles": ["producer", "licensor"],
+          "url": "https://esgf-node.llnl.gov/projects/cmip6/"
+        }
+      ],
+      "license": "CC-BY-4.0",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": ["cmip6", "gcs", "zarr"],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://zenodo.org/badge/latestdoi/618127503"
+      }
+    ],
+    "stores": null,
+    "ncviewjs:meta_yaml_url": "https://github.com/leap-stc/cmip6-leap-feedstock/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "E-OBS dataset",
+    "description": "E-OBS is a high resolution gridded climate dataset covering Europe and Northern Africa.\nThis dataset is version 23.1e with a 0.1 degree spatial resolution.\n\nVariables available are: TG: daily mean temperature, TN: daily minimum temperature,\nTX: daily maximum temperature, RR: daily precipitation sum, PP: daily mean sea-level pressure,\nHU: relative humidity, FG: daily mean wind speed and QQ: global radiation.\n\nQQ and FG are have slightly different grids and are not concatenated with other variables.\n",
+    "maintainers": [
+      {
+        "name": "Raphael Hagen",
+        "github": "norlandrhagen"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "Copernicus Climate Change Service",
+          "description": "We acknowledge the E-OBS dataset from the EU-FP6 project UERRA (https://www.uerra.eu) and the Copernicus Climate Change Service, and the data providers in the ECA&D project (https://www.ecad.eu) Cornes, R., G. van der Schrier, E.J.M. van den Besselaar, and P.D. Jones. 2018: An Ensemble Version of the E-OBS Temperature and Precipitation Datasets, J. Geophys. Res. Atmos., 123. doi:10.1029/2017JD028200",
+          "roles": ["producer", "licensor"],
+          "url": "https://surfobs.climate.copernicus.eu/dataaccess/access_eobs.php#datafiles"
+        }
+      ],
+      "license": "proprietary",
+      "license_link": {
+        "title": "ECA&D and E-OBS terms and conditions of use",
+        "url": "https://www.ecad.eu/documents/ECAD_datapolicy.pdf"
+      }
+    },
+    "thumbnail": null,
+    "tags": [
+      "zarr",
+      "climate",
+      "regional",
+      "osn",
+      "open-storage-network",
+      "europe"
+    ],
+    "links": null,
+    "stores": [
+      {
+        "id": "eobs-wind-speed",
+        "name": null,
+        "url": "https://ncsa.osn.xsede.org/Pangeo/pangeo-forge/pangeo-forge/EOBS-feedstock/eobs-wind-speed.zarr",
+        "rechunking": null,
+        "public": true,
+        "geospatial": true,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "eobs-tg-tn-tx-rr-hu-pp",
+        "name": null,
+        "url": "https://ncsa.osn.xsede.org/Pangeo/pangeo-forge/pangeo-forge/EOBS-feedstock/eobs-tg-tn-tx-rr-hu-pp.zarr",
+        "rechunking": null,
+        "public": true,
+        "geospatial": true,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "eobs-surface-downwelling",
+        "name": null,
+        "url": "https://ncsa.osn.xsede.org/Pangeo/pangeo-forge/pangeo-forge/EOBS-feedstock/eobs-surface-downwelling.zarr",
+        "rechunking": null,
+        "public": true,
+        "geospatial": true,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/pangeo-forge/EOBS-feedstock/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "eVolv2k VSSI database",
+    "description": "eVolv2k includes estimates of the magnitudes and approximate source latitudes of major volcanic stratospheric sulfur injection (VSSI) events from 500BCE to 1900CE.",
+    "maintainers": [
+      {
+        "name": "Jordan Landers",
+        "github": "jordanplanders"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "Matthew Toohey",
+          "description": null,
+          "roles": ["producer"],
+          "url": "https://artsandscience.usask.ca/profile/MToohey#ResearchAreas"
+        },
+        {
+          "name": "WDCC",
+          "description": "World Data Center for Climate",
+          "roles": ["curator", "licensor"],
+          "url": "https://www.wdc-climate.de/ui/entry?acronym=eVolv2k_v3"
+        }
+      ],
+      "license": "CC-BY-4.0",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": [
+      "zarr",
+      "pangeo-forge",
+      "open-storage-network",
+      "osn",
+      "volcanology"
+    ],
+    "links": null,
+    "stores": [
+      {
+        "id": "eVolv2k",
+        "name": "eVolv2k",
+        "url": "https://ncsa.osn.xsede.org/Pangeo/pangeo-forge/pangeo-forge/eVolv2k-feedstock/eVolv2k.zarr",
+        "rechunking": null,
+        "public": true,
+        "geospatial": false,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/pangeo-forge/eVolv2k-feedstock/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "Global Precipitation Climatology Project",
+    "description": "Global Precipitation Climatology Project (GPCP) Daily Version 1.3 gridded, merged ty satellite/gauge precipitation Climate data Record (CDR) from 1996 to 2025-05-19.\n",
+    "maintainers": [
+      {
+        "name": "Ryan Abernathey",
+        "github": "rabernat"
+      },
+      {
+        "name": "Raphael Hagen",
+        "github": "norlandrhagen"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "NOAA NCEI",
+          "description": "National Oceanographic & Atmospheric Administration National Centers for Environmental Information",
+          "roles": ["host", "licensor"],
+          "url": "https://www.ncei.noaa.gov/products/global-precipitation-climatology-project"
+        },
+        {
+          "name": "University of Maryland",
+          "description": "University of Maryland College Park Earth System Science Interdisciplinary Center (ESSIC) and Cooperative Institute for Climate and Satellites (CICS).\n",
+          "roles": ["producer"],
+          "url": "http://gpcp.umd.edu/"
+        }
+      ],
+      "license": "No constraints on data access or use.",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": [
+      "EARTH SCIENCE",
+      "ATMOSPHERE",
+      "PRECIPITATION",
+      "PRECIPITATION AMOUNT"
+    ],
+    "links": null,
+    "stores": [
+      {
+        "id": "gpcp",
+        "name": "gpcp",
+        "url": "gs://leap-persistent/data-library/GPCP-daily/GPCP-daily.zarr",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/leap-stc/gpcp-feedstock/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "Hadley Centre Sea Ice and Sea Surface Temperature (HadISST)",
+    "description": "Analysis-ready Zarr datasets derived from HadISST NetCDF",
+    "maintainers": [
+      {
+        "name": "Julius Busecke",
+        "github": "jbusecke"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "Met Office Hadley Centre",
+          "description": "Met Office Hadley Centre",
+          "roles": ["producer", "licensor"],
+          "url": "https://www.metoffice.gov.uk/hadobs/hadisst/index.html"
+        }
+      ],
+      "license": "proprietary",
+      "license_link": {
+        "title": "UK Non-Commercial Government License",
+        "url": "https://www.nationalarchives.gov.uk/doc/non-commercial-government-licence/version/2/"
+      }
+    },
+    "thumbnail": null,
+    "tags": [
+      "zarr",
+      "pangeo-forge",
+      "open-storage-network",
+      "osn",
+      "sea",
+      "ice",
+      "temperature",
+      "oceanography",
+      "climate"
+    ],
+    "links": null,
+    "stores": [
+      {
+        "id": "hadisst",
+        "name": "hadisst",
+        "url": "https://ncsa.osn.xsede.org/Pangeo/pangeo-forge/HadISST-feedstock/hadisst.zarr",
+        "rechunking": null,
+        "public": true,
+        "geospatial": true,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/pangeo-forge/HadISST-feedstock/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "Large ensemble pCO2 testbed",
+    "description": "Large ensemble pCO2 testbed (manually ingested)\n",
+    "maintainers": [
+      {
+        "name": "Julius Busecke",
+        "github": "jbusecke"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "LEAP",
+          "description": "STC: Center for Learning the Earth with Artificial Intelligence and Physics",
+          "roles": ["curator"],
+          "url": null
+        }
+      ],
+      "license": "CC-BY",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": ["carbon", "zarr", "gcp"],
+    "links": null,
+    "stores": [
+      {
+        "id": "CESM.zarr",
+        "name": null,
+        "url": "gs://leap-persistent-ro/data-library-manual/CESM.zarr",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "CanESM2.zarr",
+        "name": null,
+        "url": "gs://leap-persistent-ro/data-library-manual/CanESM2.zarr",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "GFDL.zarr",
+        "name": null,
+        "url": "gs://leap-persistent-ro/data-library-manual/GFDL.zarr",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/leap-stc/large-ensemble-pCO2-testbed-feedstock/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "LMRv2.1 Monte Carlo Runs for gridded fields",
+    "description": "Gridded variables from ensemble runs executed as part of the Last Millennium Reanalysis (LMR) project (v2.1) which utilizes an ensemble methodology to assimilate paleoclimate data for the production of annually resolved climate field reconstructions of the Common Era.",
+    "maintainers": [
+      {
+        "name": "Jordan Landers",
+        "github": "jordanplanders"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "NCEI/NOAAA",
+          "description": "National Centers for Environmental Information",
+          "roles": ["licensor", "curator"],
+          "url": "https://www.ncei.noaa.gov/access/paleo-search/study/27850"
+        }
+      ],
+      "license": "CC-BY-4.0",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": ["zarr", "pangeo-forge", "open-storage-network", "osn"],
+    "links": null,
+    "stores": [
+      {
+        "id": "LMRv2.1 Monte Carlo Runs for gridded fields",
+        "name": "LMRv2p1_MCruns_ensemble_gridded",
+        "url": "https://ncsa.osn.xsede.org/Pangeo/pangeo-forge/pangeo-forge/LMRv2p1_MCruns_ensemble_gridded-feedstock/LMRv2p1_MCruns_ensemble_gridded.zarr",
+        "rechunking": null,
+        "public": true,
+        "geospatial": true,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/pangeo-forge/LMRv2p1_MCruns_ensemble_gridded-feedstock/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "MetaFlux",
+    "description": "MetaFlux: Meta-learning global carbon fluxes from sparse spatiotemporal observations\n",
+    "maintainers": [
+      {
+        "name": "Julius Busecke",
+        "github": "jbusecke"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "Zenodo",
+          "description": "Zenodo",
+          "roles": ["host"],
+          "url": "https://zenodo.org/record/7761881#.ZFv9OS-B30p"
+        },
+        {
+          "name": "Nathaniel et al.",
+          "description": "Authors of MetaFlux: Meta-learning global carbon fluxes from sparse spatiotemporal observations",
+          "roles": ["producer", "licensor"],
+          "url": null
+        }
+      ],
+      "license": "CC-BY-4.0",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": ["my-custom-tag", "zarr"],
+    "links": null,
+    "stores": [
+      {
+        "id": "metaflux-daily",
+        "name": "METAFLUX_GPP_RECO_daily",
+        "url": "gs://leap-persistent-ro/data-library/feedstocks/metaflux_feedstock/metaflux_daily.zarr",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "metaflux-monthly",
+        "name": "METAFLUX_GPP_RECO_monthly",
+        "url": "gs://leap-persistent-ro/data-library/feedstocks/metaflux_feedstock/meatflux_monthly.zarr",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/leap-stc/metaflux_feedstock/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "NOAA Coastwatch Geo-Polar SST",
+    "description": "NOAA Geo-Polar Blended Global Sea Surface Temperature Analysis (Level 4)",
+    "maintainers": [
+      {
+        "name": "Rachel Wegener",
+        "github": "rwegener2"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "NOAA Coastwatch/OceanWatch",
+          "description": "National Oceanographic & Atmospheric Administration Coastwatch/Oceanwatch",
+          "roles": ["licensor", "producer", "processor"],
+          "url": "https://coastwatch.noaa.gov/cw/satellite-data-products/sea-surface-temperature/sea-surface-temperature-near-real-time-geopolar-blended.html"
+        }
+      ],
+      "license": "CC-BY-4.0",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": [
+      "zarr",
+      "pangeo-forge",
+      "open-storage-network",
+      "osn",
+      "noaa",
+      "polar"
+    ],
+    "links": null,
+    "stores": [
+      {
+        "id": "NOAA Coastwatch Geo-Polar SST",
+        "name": "noaa-coastwatch-geopolar-sst",
+        "url": "https://ncsa.osn.xsede.org/Pangeo/pangeo-forge/noaa-coastwatch-geopolar-sst-feedstock/noaa-coastwatch-geopolar-sst.zarr",
+        "rechunking": null,
+        "public": true,
+        "geospatial": true,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/pangeo-forge/noaa-coastwatch-geopolar-sst-feedstock/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "Sea-surface altimetry data from The Copernicus Marine Environment",
+    "description": "SSALTO/DUACS Delayed-Time Level-4 sea surface height and derived variables measured by multi-satellite altimetry observations over Global Ocean. This dataset was moved from the legacy pangeo catalog.\n",
+    "maintainers": [
+      {
+        "name": "Julius Busecke",
+        "github": "jbusecke"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "Copernicus Marine Service",
+          "description": "The Copernicus Programme is the European Union's Earth Observation Programme, looking at our planet and its environment for the ultimate benefit of all European and global citizens.\n",
+          "roles": ["producer", "licensor"],
+          "url": "https://marine.copernicus.eu/"
+        },
+        {
+          "name": "LEAP",
+          "description": "STC: Center for Learning the Earth with Artificial Intelligence and Physics",
+          "roles": ["curator"],
+          "url": null
+        }
+      ],
+      "license": "proprietary",
+      "license_link": {
+        "title": "Service Commitments and Licence",
+        "url": "https://marine.copernicus.eu/user-corner/service-commitments-and-licence"
+      }
+    },
+    "thumbnail": null,
+    "tags": ["ocean", "satellite", "carbon", "zarr", "osn"],
+    "links": [
+      {
+        "label": "Data Source (not original source)",
+        "url": "https://catalog.pangeo.io/browse/master/ocean/sea_surface_height/"
+      },
+      {
+        "label": "Original Documentation (not available anymore)",
+        "url": "https://data.marine.copernicus.eu/product/SEALEVEL_GLO_PHY_L4_REP_OBSERVATIONS_008_047/description"
+      }
+    ],
+    "stores": [
+      {
+        "id": "AVISO (Pangeo Legacy copy)",
+        "name": "AVISO",
+        "url": "https://ncsa.osn.xsede.org/Pangeo/pangeo-cmems-duacs",
+        "rechunking": null,
+        "public": true,
+        "geospatial": true,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/leap-stc/sea-surface-altimetry-data-from-copernicus-feedstock/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "WOA 2018 1 degree monthly",
+    "description": "1 Degree monthly climatology from WOA",
+    "maintainers": [
+      {
+        "name": "Dhruv Balwada",
+        "github": "dhruvbalwada"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "NOAA NCEI",
+          "description": "National Oceanographic & Atmospheric Administration National Centers for Environmental Information",
+          "roles": ["producer", "licensor"],
+          "url": "https://www.ncdc.noaa.gov/oisst"
+        }
+      ],
+      "license": "CC-BY-4.0",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": ["zarr", "pangeo-forge", "open-storage-network", "osn"],
+    "links": null,
+    "stores": [
+      {
+        "id": "woa18-1deg-monthly",
+        "name": "woa18-1deg-monthly",
+        "url": "https://ncsa.osn.xsede.org/Pangeo/pangeo-forge/WOA_1degree_monthly-feedstock/woa18-1deg-monthly.zarr",
+        "rechunking": null,
+        "public": true,
+        "geospatial": true,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/pangeo-forge/WOA_1degree_monthly-feedstock/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "ClimSim",
+    "description": "\"Analysis-ready optimized ClimSim data\"\n",
+    "maintainers": [
+      {
+        "name": "Qingyuan Yang",
+        "github": "yiqioyang"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "Hugging Face",
+          "description": "Hugging Face",
+          "roles": ["host"],
+          "url": "https://huggingface.co/datasets/LEAP/ClimSim_low-res"
+        },
+        {
+          "name": "Sungduk Yu et al",
+          "description": "ClimSim: An open large-scale dataset for training high-resolution physics emulators in hybrid multi-scale climate simulators",
+          "roles": ["producer", "licensor"],
+          "url": "https://arxiv.org/abs/2306.08754"
+        }
+      ],
+      "license": "Apache-2.0",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": ["my-custom-tag", "zarr"],
+    "links": null,
+    "stores": [
+      {
+        "id": "climsim-lowres-mli",
+        "name": "ClimSim Lowres mli",
+        "url": "gs://leap-persistent-ro/data-library/feedstocks/climsim_feedstock/climsim_lowres_mli.zarr",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/leap-stc/climsim_feedstock/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "High-resolution ocean simulation (LLC4320) 12-hourly averaged 3D regions",
+    "description": "The LLC4320 is an ocean only simulation forced by 6 hourly atmospheric fields, \nwhich was run at NASA JPL by Dimitris Menemenlis. These are 12 hourly averaged \nfields for from 12 different regions in the ocean, each roughly 10degrees by \n10degrees in size, for the top 700m of the water column. There five 3D variables: \nTemperature, Salinity, and 3 components of velocity, and four 2D surface fields:\nBoundary layer depth, surface heat flux, and 2 components of wind stress.\nNote that this is a small part of the original dataset which has been processed and \nsub-sampled to make the size more manageable.\n",
+    "maintainers": [
+      {
+        "name": "Julius Busecke",
+        "github": "jbusecke"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "NASA, Abigail Bodner, Dhruv Balwada",
+          "description": "The data was originally generated by Dimitris Menemenlis at NASA JPL. The sub-sampling and transfer of data was done by Abigail Bodner with some help from Dhruv Balwada",
+          "roles": ["producer", "licensor"],
+          "url": null
+        }
+      ],
+      "license": "CC-BY-NC-4.0",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": ["llc4320", "m2lines", "ocean", "zarr"],
+    "links": null,
+    "stores": [
+      {
+        "id": "agulhas",
+        "name": "The Agulhas region subset",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/LLC4320_12h_3D-regions/agulhas.zarr",
+        "rechunking": null,
+        "public": true,
+        "geospatial": true,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/leap-stc/LLC4320_12h_3D-regions_feedstock/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "CHIRPS-2.0 global daily",
+    "description": "Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS)\n",
+    "maintainers": [
+      {
+        "name": "Julius Busecke",
+        "github": "jbusecke"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "Julius",
+          "description": "Just a guy testing some recipes. Nothing to see here.",
+          "roles": ["producer", "licensor"],
+          "url": null
+        }
+      ],
+      "license": "Just a Test",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": ["precipitation", "zarr"],
+    "links": null,
+    "stores": [
+      {
+        "id": "chirps-global-daily",
+        "name": "CHIRPS-2.0",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-pipeline/chirps_feedstock/chirps-global-daily.zarr",
+        "rechunking": null,
+        "public": true,
+        "geospatial": true,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": "2024-11-19T21:19:44.192735+00:00"
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/leap-stc/chirps_feedstock/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "GOTM NN Training Data",
+    "description": "Data for NN training from Sane et al. 2023. (Parameterizing Vertical Mixing Coefficients in the Ocean Surface Boundary Layer using Neural Networks). An additional text data file is available at: https://nyu1.osn.mghpcc.org/leap-pangeo-manual/GOTM/data_testing_4_paper.txt\n",
+    "maintainers": [
+      {
+        "name": "Raphael Hagen",
+        "github": "norlandrhagen"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "Zenodo",
+          "description": "https://zenodo.org/records/8293998",
+          "roles": ["archive", "doi"],
+          "url": null
+        }
+      ],
+      "license": "Creative Commons Attribution 4.0 International",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": ["neural network", "ocean surface boundary", "zarr"],
+    "links": null,
+    "stores": [
+      {
+        "id": "raw_training",
+        "name": "GOTM: Raw training data",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/GOTM/raw_training_data.zarr",
+        "rechunking": null,
+        "public": true,
+        "geospatial": false,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "sf_training",
+        "name": "GOTM: SF training data",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-manual/GOTM/sf_training_data.zarr",
+        "rechunking": null,
+        "public": true,
+        "geospatial": false,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/leap-stc/GOTM/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "CASM",
+    "description": "CASM: A long-term Consistent Artificial-intelligence based Soil Moisture dataset based on machine learning and remote sensing\n",
+    "maintainers": [
+      {
+        "name": "Raphael Hagen",
+        "github": "norlandrhagen"
+      },
+      {
+        "name": "Mitra Cattry",
+        "github": "mitraA90"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "Zenodo",
+          "description": "Zenodo",
+          "roles": ["host"],
+          "url": "https://zenodo.org/records/7072512#.Y01cQi-B2-u"
+        }
+      ],
+      "license": "unknown",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": [
+      "soil moisture",
+      "global",
+      "remote sensing",
+      "machine learning",
+      "SMAP"
+    ],
+    "links": null,
+    "stores": [
+      {
+        "id": "casm",
+        "name": "CASM: Consistent Artificial-intelligence Soil Moisture",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-pipeline/CASM/casm.zarr",
+        "rechunking": null,
+        "public": true,
+        "geospatial": true,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/leap-stc/CASM/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "MODIS LAI",
+    "description": "Reprocessed MODIS Version 6.1 Leaf Area Index (LAI) datasets for land surface and climate modeling applications. MOD15A2GFS -- high-resolution GFS Collection 6 (Provided by BNU GLOBMAP)",
+    "maintainers": [
+      {
+        "name": "Mitra Cattry",
+        "github": "mitraA90"
+      },
+      {
+        "name": "Raphael Hagen",
+        "github": "norlandrhagen"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "NASA MODIS",
+          "description": "NASA Earth Observing System Data and Information System (EOSDIS)",
+          "roles": ["host", "licensor"],
+          "url": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/6/MOD15A2GFS/"
+        },
+        {
+          "name": "Beijing Normal University (BNU) - Global Change Research Group",
+          "description": "Provider of the reprocessed GLOBMAP Leaf Area Index dataset",
+          "roles": ["data provider", "research institution"],
+          "url": "http://globalchange.bnu.edu.cn/research/laiv061#usage"
+        }
+      ],
+      "license": "NASA Open Data - Creative Commons Zero (CC0)",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": [
+      "leaf area index",
+      "global",
+      "remote sensing",
+      "MODIS",
+      "LAI",
+      "GLOBMAP",
+      "Beijing Normal University"
+    ],
+    "links": null,
+    "stores": [
+      {
+        "id": "modis-lai",
+        "name": "MODIS Leaf Area Index",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-pipeline/MODIS_LAI/MODIS_LAI.zarr",
+        "rechunking": null,
+        "public": true,
+        "geospatial": true,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/leap-stc/MODIS-LAI/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "eNATL",
+    "description": "eNATL60-TSW-60m & 600m are extractions of a very high resolution oceanic simulation of the North Atlantic performed at MEOM, IGE (FRANCE).\n",
+    "maintainers": [
+      {
+        "name": "Julius Busecke",
+        "github": "jbusecke"
+      },
+      {
+        "name": "Charles Stern",
+        "github": "cisaacstern"
+      },
+      {
+        "name": "Raphael Hagen",
+        "github": "norlandrhagen"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "Zenodo",
+          "description": "Zenodo",
+          "roles": ["host"],
+          "url": "https://zenodo.org/records/10261274"
+        }
+      ],
+      "license": "unknown",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": ["zarr", "ocean", "m2lines", "model"],
+    "links": null,
+    "stores": [
+      {
+        "id": "enatl60-blbt02",
+        "name": "eNATL 60M",
+        "url": "gs://leap-persistent/data-library/feedstocks/eNATL_feedstock/eNATL60-BLBT02.zarr",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "enatl600m-blbt02",
+        "name": "eNATL 600M",
+        "url": "gs://leap-persistent/data-library/feedstocks/eNATL_feedstock/eNATL600m-BLBT02.zarr",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/leap-stc/eNATL_feedstock/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "GRACE-GRACE-FO-TWS",
+    "description": "Global Total Water Storage (TWS) data derived from GRACE and GRACE-FO satellite missions. This dataset is used for hydrological and climate monitoring, assessing water resources on a global scale.",
+    "maintainers": [
+      {
+        "name": "Mitra Cattry",
+        "github": "mitraA90"
+      },
+      {
+        "name": "Raphael Hagen",
+        "github": "norlandrhagen"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "NASA GRACE & GRACE-FO Mission",
+          "description": "NASA's GRACE and GRACE-FO missions measure changes in Earth's water storage, using satellite gravimetry data to monitor total water storage variations worldwide.",
+          "roles": ["data provider", "research institution"],
+          "url": "https://www.nasa.gov/mission_pages/grace/index.html"
+        },
+        {
+          "name": "Jet Propulsion Laboratory (JPL)",
+          "description": "The Jet Propulsion Laboratory (JPL) processes GRACE and GRACE-FO satellite data for Earth science research and water storage monitoring.",
+          "roles": ["data provider", "research institution"],
+          "url": "https://www.jpl.nasa.gov/"
+        }
+      ],
+      "license": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": [
+      "GRACE",
+      "GRACE-FO",
+      "Total Water Storage (TWS)",
+      "Earth Observation",
+      "Satellite Data",
+      "Global",
+      "Remote Sensing",
+      "Hydrology",
+      "Climate Monitoring",
+      "Water Resources"
+    ],
+    "links": null,
+    "stores": [
+      {
+        "id": "GRACE-GRACE-FO-TWS",
+        "name": "GRACE & GRACE-FO Total Water Storage (TWS)",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-pipeline/GRACE-GRACE-FO-TWS/GRACE-GRACE-FO-TWS.zarr",
+        "rechunking": null,
+        "public": true,
+        "geospatial": true,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/leap-stc/GRACE-GRACE-FO-TWS/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "GLAB-VOD",
+    "description": "The Global L-band equivalent AI-Based Vegetation Optical Depth (GLAB-VOD) dataset provides a long-term, temporally consistent record of vegetation optical depth from 2002 to 2020 at 25 km resolution and 18-day intervals. Using machine learning, this dataset extends the SMAP-IB VOD record by fusing brightness temperatures from SMOS, AMSR-E, and AMSR-2 with ancillary soil moisture data from CASM. A companion product, GLAB-TB, offers harmonized brightness temperatures used as intermediate inputs. GLAB-VOD is designed for applications in vegetation monitoring, biomass estimation, and climate studies.\n",
+    "maintainers": [
+      {
+        "name": "Mitra Cattry",
+        "github": "mitraA90"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "Columbia University",
+          "description": "Primary institution hosting the research and dataset generation",
+          "roles": ["host"],
+          "url": "https://climate.columbia.edu/"
+        },
+        {
+          "name": "INRAE - ISPA, University of Bordeaux",
+          "description": "Contributing institution providing SMAP-IB VOD, SMOS TB, and related data",
+          "roles": ["data provider"],
+          "url": "https://www.inrae.fr/"
+        },
+        {
+          "name": "Zenodo",
+          "description": "Permanent archive for GLAB-VOD and GLAB-TB datasets",
+          "roles": ["data provider"],
+          "url": "https://zenodo.org/doi/10.5281/zenodo.10306095"
+        }
+      ],
+      "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": [
+      "vegetation optical depth",
+      "VOD",
+      "L-band",
+      "remote sensing",
+      "global",
+      "climate",
+      "vegetation water content",
+      "GLAB"
+    ],
+    "links": null,
+    "stores": [
+      {
+        "id": "vod-glab",
+        "name": "VOD-GLAB Global L-band Vegetation Optical Depth",
+        "url": "gs://leap-persistent/data-library/GLAB-VOD/GLAB-VOD.zarr",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/leap-stc/VOD-GLAB/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "LCSPP-AVHRR Photosynthesis Proxy",
+    "description": "The Long-term Continuous SIF-informed Photosynthesis Proxy from AVHRR surface reflectance (LCSPP-AVHRR) provides a globally consistent, biweekly dataset of photosynthetic activity spanning 1982 to 2000 at 0.05\u00b0 spatial resolution. Version 3.2 of the dataset is constructed by calibrating AVHRR surface reflectance bands against MODIS during their overlapping period (2001\u20132023), followed by training a neural network to emulate satellite-derived SIF from OCO-2. The LCSPP-AVHRR dataset captures vegetation dynamics with higher fidelity than traditional vegetation indices (e.g., NDVI, kNDVI, NIRv) and is suitable for long-term GPP proxy estimation. All data are provided in zarr format in one file to represent biweekly intervals.",
+    "maintainers": [
+      {
+        "name": "Mitra Cattry",
+        "github": "mitraA90"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "Columbia University",
+          "description": "Primary research institution",
+          "roles": ["producer", "research institution"],
+          "url": null
+        },
+        {
+          "name": "Seoul National University",
+          "description": "Partner institution contributing AVHRR processing and MODIS calibration",
+          "roles": ["data provider", "research institution"],
+          "url": null
+        },
+        {
+          "name": "Zenodo",
+          "description": "Permanent archive hosting the LCSPP-AVHRR dataset and associated resources",
+          "roles": ["host"],
+          "url": null
+        }
+      ],
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": null,
+    "links": null,
+    "stores": [
+      {
+        "id": "lcspp-avhrr-1982-2000",
+        "name": "LCSPP-AVHRR Long-term Continuous SIF-informed Photosynthesis Proxy v3.2 (1982\u20132000)",
+        "url": "gs://leap-persistent/data-library/GLAB-CSIF/GLAB-CSIF.zarr",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/leap-stc/GLAB-CSIF/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "SRTMGL1-DEM",
+    "description": "Global 1-Arc Second Digital Elevation Model (DEM) derived from NASA's Shuttle Radar Topography Mission (SRTM). This dataset provides high-resolution topographic data for applications in hydrology, climate modeling, and terrain analysis.",
+    "maintainers": [
+      {
+        "name": "Mitra Cattry",
+        "github": "mitraA90"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "NASA Shuttle Radar Topography Mission (SRTM)",
+          "description": "NASA's SRTM mission collected high-resolution elevation data for nearly the entire Earth's land surface using radar interferometry.",
+          "roles": ["data provider", "research institution"],
+          "url": "https://www2.jpl.nasa.gov/srtm/"
+        },
+        {
+          "name": "Jet Propulsion Laboratory (JPL)",
+          "description": "JPL processes SRTM data for global digital elevation modeling, supporting geospatial analysis and environmental research.",
+          "roles": ["data provider", "research institution"],
+          "url": "https://www.jpl.nasa.gov/"
+        }
+      ],
+      "license": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": [
+      "SRTM",
+      "DEM",
+      "Digital Elevation Model",
+      "Earth Observation",
+      "Remote Sensing",
+      "NASA",
+      "Topography",
+      "Global",
+      "Terrain Mapping",
+      "Geospatial Data"
+    ],
+    "links": null,
+    "stores": [
+      {
+        "id": "SRTMGL1-DEM",
+        "name": "SRTMGL1 Digital Elevation Model (DEM)",
+        "url": "gs://leap-persistent/data-library/SRTMGL1_DEM/SRTMGL1_DEM.zarr",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/leap-stc/SRTMGL1_DEM/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "Caravan - A global community dataset for large-sample hydrology",
+    "description": "Caravan is an open community dataset of meteorological forcing data, catchment attributes, and discharge data for catchments around the world. Additionally, Caravan provides code to derive meteorological forcing data and catchment attributes from the same data sources in the cloud, making it easy for anyone to extend Caravan to new catchments. The vision of Caravan is to provide the foundation for a truly global open source community resource that will grow over time. paper: https://www.nature.com/articles/s41597-023-01975-w DOI: https://zenodo.org/records/15529786\n",
+    "maintainers": [
+      {
+        "name": "Raphael Hagen",
+        "github": "norlandrhagen"
+      },
+      {
+        "name": "Kara D. Lamb",
+        "github": "kdlamb"
+      },
+      {
+        "name": "Samarth Agrawal",
+        "github": "SammyAgrawal"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "Zendodo",
+          "description": "https://zenodo.org/records/15529786",
+          "roles": ["distributor", "licensor"],
+          "url": null
+        }
+      ],
+      "license": "CC 4.0",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": ["hydrology", "rainfall-runoff modeling", "streamflow", "zarr"],
+    "links": null,
+    "stores": [
+      {
+        "id": "Caravan - Version 1.6",
+        "name": "Caravan - A global community dataset for large-sample hydrology",
+        "url": "https://nyu1.osn.mghpcc.org/leap-pangeo-pipeline/Caravan/Caravan.zarr",
+        "rechunking": null,
+        "public": true,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/leap-stc/Caravan/blob/main/feedstock/meta.yaml"
+  },
+  {
+    "title": "PISCOeo_pm & PISCOt Evapotranspiration and Tmax",
+    "description": "High-resolution daily gridded air temperature and evapotranspiration over Peru. Tmax is sourced from the PISCOt v1.2 dataset (High-resolution grids of daily air temperature for Peru.) (DOI: https://figshare.com/collections/_/5959863). Evapotranspiration comes from the PISCOeo_pm dataset (a reference evapotranspiration gridded database based on FAO Penman-Monteith in Peru.) (DOI: https://figshare.com/collections/_/5633182).\n",
+    "maintainers": [
+      {
+        "name": "Jiameng Wu",
+        "github": "just-meng"
+      }
+    ],
+    "provenance": {
+      "providers": [
+        {
+          "name": "Figshare",
+          "description": "Figshare",
+          "roles": ["producer", "licensor"],
+          "url": null
+        }
+      ],
+      "license": "CC BY 4.0",
+      "license_link": null
+    },
+    "thumbnail": null,
+    "tags": [
+      "peru",
+      "south america",
+      "evapotranspiration",
+      "temperature",
+      "tmax"
+    ],
+    "links": null,
+    "stores": [
+      {
+        "id": "evapotranspiration",
+        "name": "PISCOeo_pm_evapotranspiration",
+        "url": "gs://leap-persistent/data-library/PISCOeo_pm/evapotranspiration.zarr",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      },
+      {
+        "id": "tmax",
+        "name": "PISCOeo_pm_tmax",
+        "url": "gs://leap-persistent/data-library/PISCOeo_pm/tmax.zarr",
+        "rechunking": null,
+        "public": false,
+        "geospatial": null,
+        "xarray_open_kwargs": {
+          "engine": "zarr"
+        },
+        "last_updated": null
+      }
+    ],
+    "ncviewjs:meta_yaml_url": "https://github.com/leap-stc/PISCOeo_pm/blob/main/feedstock/meta.yaml"
+  }
+]
