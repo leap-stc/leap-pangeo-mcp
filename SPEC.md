@@ -26,9 +26,13 @@ Pangeo's tools and resources, shipped in the `pangeo-jupyter-ai` image.
   setting `PersonaManager.builtin_mcp_servers`. That list must include both:
   - `{"type": "http", "name": "Jupyter MCP Server", "url": "http://localhost:3001/mcp", "headers": []}`
   - `{"name": "leap-pangeo", "command": "/srv/conda/envs/notebook/bin/leap-pangeo-mcp", "args": [], "env": []}`
-- Terminal agents: `managedMcpServers` in `/etc/claude-code/managed-settings.json`
-  (not `managed-mcp.json`), `mcpServers` in `/etc/gemini-cli/settings.json`,
-  Codex managed config under `/etc/codex/` (file name to confirm).
+- Terminal agents: `mcpServers` in `/etc/gemini-cli/settings.json` (Gemini CLI
+  system settings, merged with each user's own servers). Claude Code and Codex
+  have no system-wide setting that adds a stdio server without blocking the
+  servers researchers add, so each researcher runs `claude mcp add --scope user`
+  or `codex mcp add` once; `/etc/claude-code/CLAUDE.md` gives the Claude Code
+  command. Never `managed-mcp.json` (exclusive). See PLAN.md Deviations
+  (2026-10-30, step 7).
 - Knowledge layer: one LEAP primer, placed in the FastMCP `instructions`, a
   `leap_overview` tool, and `/etc/claude-code/CLAUDE.md`.
 
