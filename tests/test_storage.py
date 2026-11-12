@@ -6,8 +6,8 @@ import pytest
 import xarray as xr
 from fsspec.implementations.memory import MemoryFileSystem
 
-from leap_pangeo_mcp.core import storage
-from leap_pangeo_mcp.core.common import MAX_CHARS, OSN_ENDPOINTS, LeapError, human_bytes
+from leap_mcp.core import storage
+from leap_mcp.core.common import MAX_CHARS, OSN_ENDPOINTS, LeapError, human_bytes
 
 pytestmark = pytest.mark.filterwarnings("ignore::UserWarning")
 CURSOR = re.compile(r'cursor="([^"]+)"')

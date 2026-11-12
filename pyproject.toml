@@ -28,7 +28,7 @@ dependencies = [
 test = ["pytest"]
 
 [project.scripts]
-leap-pangeo-mcp = "leap_pangeo_mcp.server:main"
+leap-pangeo-mcp = "leap_mcp.server:main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["leap_pangeo_mcp"]
+packages = ["leap_mcp"]

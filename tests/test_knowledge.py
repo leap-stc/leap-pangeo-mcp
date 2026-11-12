@@ -8,7 +8,7 @@ import xarray as xr
 from fsspec.implementations.memory import MemoryFileSystem
 from fsspec.registry import _registry
 
-from leap_pangeo_mcp.core import knowledge
+from leap_mcp.core import knowledge
 
 
 class FakeObjectStore(MemoryFileSystem):

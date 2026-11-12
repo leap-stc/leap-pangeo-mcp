@@ -2,8 +2,8 @@
 
 import re
 
-from leap_pangeo_mcp.core import docs
-from leap_pangeo_mcp.core.common import MAX_CHARS
+from leap_mcp.core import docs
+from leap_mcp.core.common import MAX_CHARS
 
 
 def _urls(text: str) -> list[str]:

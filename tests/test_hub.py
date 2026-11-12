@@ -2,7 +2,7 @@ import subprocess
 
 import pytest
 
-from leap_pangeo_mcp.core import hub
+from leap_mcp.core import hub
 
 HUB_VARS = ["JUPYTERHUB_USER", "JUPYTER_IMAGE_SPEC", "MEM_LIMIT", "CPU_LIMIT"]
 

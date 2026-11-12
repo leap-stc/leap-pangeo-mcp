@@ -1,7 +1,7 @@
 import httpx
 import pytest
 
-from leap_pangeo_mcp.core import common
+from leap_mcp.core import common
 
 
 @pytest.fixture(autouse=True)

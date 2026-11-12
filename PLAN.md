@@ -36,6 +36,7 @@ Issues found that are outside the current step. Record here; do not fix unless b
 - `tests/test_server.py` finds the server through `leap-pangeo-mcp` on `PATH`, so `.venv/bin/python -m pytest` without an activated venv errors on its 4 tests. Run `source .venv/bin/activate` first, or put `.venv/bin` on `PATH`.
 - pangeo-jupyter-ai README, "One-time setup" step 4, says to replace `YOUR_QUAY_ORG` in `build.yaml` and `test.yaml`, but both already set `IMAGE_NAME: "sed2194/pangeo-jupyter-ai"`. Found on 2026-10-30 in step 7.
 - pangeo-jupyter-ai workflows use `jupyterhub/repo2docker-action@master`, unpinned, so an upstream change can break the build or the PR check with no change in the repo. Found on 2026-10-30 in step 7.
+- The import package is renamed from `leap_pangeo_mcp` to `leap_mcp` after v0.1.0 (not `mcp`, which would shadow the `mcp` SDK the server imports). The pip name and the `leap-pangeo-mcp` console script are unchanged. pangeo-jupyter-ai pins v0.1.0, so it still builds; when `LEAP_PANGEO_MCP_VERSION` moves past v0.1.0, change `leap_pangeo_mcp` to `leap_mcp` in its `Dockerfile` (the `/etc/claude-code/CLAUDE.md` step) and `leap-pangeo-mcp/smoke_test.py`, or the image build fails. Recorded on 2026-11-12.
 
 ## Deviations
 

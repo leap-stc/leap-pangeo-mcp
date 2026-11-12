@@ -1,4 +1,4 @@
-"""FastMCP wrapper exposing leap_pangeo_mcp.core functions as MCP tools over stdio."""
+"""FastMCP wrapper exposing leap_mcp.core functions as MCP tools over stdio."""
 
 import logging
 from collections.abc import Callable
@@ -10,8 +10,8 @@ from mcp.server.fastmcp import FastMCP
 from mcp.types import ToolAnnotations
 from pydantic import Field
 
-from leap_pangeo_mcp.core import catalog, docs, hub, knowledge, storage
-from leap_pangeo_mcp.core.common import MAX_CHARS, LeapError, one_line
+from leap_mcp.core import catalog, docs, hub, knowledge, storage
+from leap_mcp.core.common import MAX_CHARS, LeapError, one_line
 
 QUICK_TIMEOUT_SECONDS = 20  # catalog, docs and the local tools
 STORAGE_TIMEOUT_SECONDS = 60

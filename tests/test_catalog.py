@@ -4,8 +4,8 @@ import re
 
 import pytest
 
-from leap_pangeo_mcp.core import catalog
-from leap_pangeo_mcp.core.common import MAX_CHARS, OSN_ENDPOINTS
+from leap_mcp.core import catalog
+from leap_mcp.core.common import MAX_CHARS, OSN_ENDPOINTS
 
 CURSOR = re.compile(r'cursor="([^"]+)"')
 

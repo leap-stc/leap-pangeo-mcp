@@ -10,9 +10,9 @@ import pytest
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
-from leap_pangeo_mcp import server
-from leap_pangeo_mcp.core import knowledge
-from leap_pangeo_mcp.core.common import MAX_CHARS, LeapError
+from leap_mcp import server
+from leap_mcp.core import knowledge
+from leap_mcp.core.common import MAX_CHARS, LeapError
 
 PHASE_1_TOOLS = {
     "leap_overview",

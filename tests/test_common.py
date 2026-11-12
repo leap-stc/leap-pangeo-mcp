@@ -5,8 +5,8 @@ import time
 import httpx
 import pytest
 
-from leap_pangeo_mcp.core import common
-from leap_pangeo_mcp.core.common import LeapError
+from leap_mcp.core import common
+from leap_mcp.core.common import LeapError
 
 CATALOG = "consolidated-web-catalog.json"
 
